@@ -1,0 +1,754 @@
+@charset "UTF-8";
+/*далее использовать переменную и при изменении общего шрифта не придется менять во всем css*/
+/*font-family fa*/
+/*colors font*/
+/*font dark*/
+/*font light*/
+/*sidebar font & icon*/
+/*devider*/
+/*colors bg*/
+/*sidebar bg*/
+/*hover transition*/
+/*hover    transition: all 0.2s ease-out*/
+/*отступы иконок*/
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Light"), local("NunitoSans-Light"), url("Nunitosanslight.woff2") format("woff2"), url("Nunitosanslight.woff") format("woff"), url("Nunitosanslight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Regular"), local("NunitoSans-Regular"), url("Nunitosansregular.woff2") format("woff2"), url("Nunitosansregular.woff") format("woff"), url("Nunitosansregular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans SemiBold"), local("NunitoSans-SemiBold"), url("Nunitosanssemibold.woff2") format("woff2"), url("Nunitosanssemibold.woff") format("woff"), url("Nunitosanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Italic"), local("NunitoSans-Italic"), url("Nunitosansitalic.woff2") format("woff2"), url("Nunitosansitalic.woff") format("woff"), url("Nunitosansitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans ExtraLight Italic"), local("NunitoSans-ExtraLightItalic"), url("Nunitosansextralightitalic.woff2") format("woff2"), url("Nunitosansextralightitalic.woff") format("woff"), url("Nunitosansextralightitalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans ExtraBold Italic"), local("NunitoSans-ExtraBoldItalic"), url("Nunitosansextrabolditalic.woff2") format("woff2"), url("Nunitosansextrabolditalic.woff") format("woff"), url("Nunitosansextrabolditalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans ExtraBold"), local("NunitoSans-ExtraBold"), url("Nunitosansextrabold.woff2") format("woff2"), url("Nunitosansextrabold.woff") format("woff"), url("Nunitosansextrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Light Italic"), local("NunitoSans-LightItalic"), url("Nunitosanslightitalic.woff2") format("woff2"), url("Nunitosanslightitalic.woff") format("woff"), url("Nunitosanslightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Black"), local("NunitoSans-Black"), url("Nunitosansblack.woff2") format("woff2"), url("Nunitosansblack.woff") format("woff"), url("Nunitosansblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans ExtraLight"), local("NunitoSans-ExtraLight"), url("Nunitosansextralight.woff2") format("woff2"), url("Nunitosansextralight.woff") format("woff"), url("Nunitosansextralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Bold Italic"), local("NunitoSans-BoldItalic"), url("Nunitosansbolditalic.woff2") format("woff2"), url("Nunitosansbolditalic.woff") format("woff"), url("Nunitosansbolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans SemiBold Italic"), local("NunitoSans-SemiBoldItalic"), url("Nunitosanssemibolditalic.woff2") format("woff2"), url("Nunitosanssemibolditalic.woff") format("woff"), url("Nunitosanssemibolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Bold"), local("NunitoSans-Bold"), url("Nunitosansbold.woff2") format("woff2"), url("Nunitosansbold.woff") format("woff"), url("Nunitosansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: local("Nunito Sans Black Italic"), local("NunitoSans-BlackItalic"), url("Nunitosansblackitalic.woff2") format("woff2"), url("Nunitosansblackitalic.woff") format("woff"), url("Nunitosansblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+/*fontawesome*/
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/fontAwesome/webfonts/fa-brands-400.eot");
+  src: url("../fonts/fontAwesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontAwesome/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fontAwesome/webfonts/fa-brands-400.woff") format("woff"), url("../fonts/fontAwesome/webfonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fontAwesome/webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/fontAwesome/webfonts/fa-regular-400.eot");
+  src: url("../fonts/fontAwesome/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontAwesome/webfonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fontAwesome/webfonts/fa-regular-400.woff") format("woff"), url("../fonts/fontAwesome/webfonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fontAwesome/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../fonts/fontAwesome/webfonts/fa-solid-900.eot");
+  src: url("../fonts/fontAwesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontAwesome/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fontAwesome/webfonts/fa-solid-900.woff") format("woff"), url("../fonts/fontAwesome/webfonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fontAwesome/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #EEEEEE;
+  color: #3e5569; }
+
+/*                           header-navbar*/
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 64px;
+  background-color: #141619; }
+
+.navbar-container {
+  width: 250px; }
+  .navbar-container .bars-block__link,
+  .navbar-container .ellipse-block__link {
+    max-height: 64px;
+    line-height: 64px;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #A5A8AB; }
+    .navbar-container .bars-block__link::before, .navbar-container .bars-block__link::after,
+    .navbar-container .ellipse-block__link::before,
+    .navbar-container .ellipse-block__link::after {
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-weight: 900;
+      color: #A5A8AB;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .navbar-container .bars-block__link:hover::before, .navbar-container .bars-block__link:hover::after,
+    .navbar-container .ellipse-block__link:hover::before,
+    .navbar-container .ellipse-block__link:hover::after {
+      color: #fff; }
+    .navbar-container .bars-block__link:hover,
+    .navbar-container .ellipse-block__link:hover {
+      color: #fff; }
+  .navbar-container .bars-block {
+    display: none; }
+    .navbar-container .bars-block__link::before {
+      content: "\f0c9";
+      font-size: 1.1rem; }
+  .navbar-container .logo-block__link {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    height: 64px;
+    padding: 14px 15px;
+    letter-spacing: 1.5px;
+    background-color: #1F262D; }
+    .navbar-container .logo-block__link p {
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 200;
+      font-size: 1.3rem;
+      color: #fff; }
+      .navbar-container .logo-block__link p span:last-child {
+        display: inline-block;
+        font-weight: 900; }
+        .navbar-container .logo-block__link p span:last-child::first-letter {
+          color: #27A9E3; }
+  .navbar-container .ellipse-block {
+    display: none; }
+    .navbar-container .ellipse-block__link::before {
+      content: "\f141";
+      font-size: 1.1rem; }
+
+.collapse-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+/*левый список в шапке*/
+.left-navlist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .left-navlist .bars-block__link,
+  .left-navlist .create-block__link,
+  .left-navlist .search-block__link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 64px;
+    line-height: 64px;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #A5A8AB; }
+    .left-navlist .bars-block__link::before, .left-navlist .bars-block__link::after,
+    .left-navlist .create-block__link::before,
+    .left-navlist .create-block__link::after,
+    .left-navlist .search-block__link::before,
+    .left-navlist .search-block__link::after {
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-weight: 900;
+      color: #A5A8AB;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .left-navlist .bars-block__link:hover::before, .left-navlist .bars-block__link:hover::after,
+    .left-navlist .create-block__link:hover::before,
+    .left-navlist .create-block__link:hover::after,
+    .left-navlist .search-block__link:hover::before,
+    .left-navlist .search-block__link:hover::after {
+      color: #fff; }
+    .left-navlist .bars-block__link:hover,
+    .left-navlist .create-block__link:hover,
+    .left-navlist .search-block__link:hover {
+      color: #fff; }
+  .left-navlist .bars-block__link::before {
+    content: "\f0c9";
+    font-size: 1.1rem; }
+  .left-navlist .create-block__link {
+    white-space: nowrap; }
+    .left-navlist .create-block__link::after {
+      margin-left: 10px;
+      content: "\f107";
+      font-size: 1rem; }
+  .left-navlist .create-block #drop-create {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .left-navlist .create-block #drop-create a {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 10px;
+      color: #3e5569;
+      font-size: 0.9rem; }
+      .left-navlist .create-block #drop-create a:hover {
+        background-color: #EEEEEE; }
+    .left-navlist .create-block #drop-create .divider {
+      height: 1px;
+      width: 100%;
+      background-color: #eee; }
+  .left-navlist .search-block__link::after {
+    content: "\f002";
+    font-size: 1rem; }
+  .left-navlist .search-block .search-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    z-index: 10; }
+    .left-navlist .search-block .search-form__input {
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0px 15px;
+      background-color: #FFF;
+      width: 100%;
+      height: 64px;
+      outline: none;
+      border: 0;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .left-navlist .search-block .search-form__close {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      margin-right: 15px;
+      max-height: 64px;
+      line-height: 64px;
+      border: 0;
+      background-color: #fff; }
+      .left-navlist .search-block .search-form__close::before {
+        content: '\f00d';
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: #A5A8AB;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out; }
+
+/*правый список в шапке*/
+.right-navlist {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .right-navlist .alert-block__link,
+  .right-navlist .comment-block__link,
+  .right-navlist .account-block__link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 64px;
+    line-height: 64px;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #A5A8AB; }
+    .right-navlist .alert-block__link::before, .right-navlist .alert-block__link::after,
+    .right-navlist .comment-block__link::before,
+    .right-navlist .comment-block__link::after,
+    .right-navlist .account-block__link::before,
+    .right-navlist .account-block__link::after {
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: #A5A8AB;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .right-navlist .alert-block__link:hover::before, .right-navlist .alert-block__link:hover::after,
+    .right-navlist .comment-block__link:hover::before,
+    .right-navlist .comment-block__link:hover::after,
+    .right-navlist .account-block__link:hover::before,
+    .right-navlist .account-block__link:hover::after {
+      color: #fff; }
+    .right-navlist .alert-block__link:hover,
+    .right-navlist .comment-block__link:hover,
+    .right-navlist .account-block__link:hover {
+      color: #fff; }
+  .right-navlist .alert-block__link::before {
+    content: "\f0f3"; }
+  .right-navlist .alert-block #drop-alert {
+    position: absolute;
+    right: 100px;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .right-navlist .alert-block #drop-alert a {
+      display: inline-block;
+      width: 100%;
+      padding: 15px 10px;
+      color: #3e5569;
+      font-size: 0.9rem; }
+      .right-navlist .alert-block #drop-alert a:hover {
+        background-color: #EEEEEE; }
+    .right-navlist .alert-block #drop-alert .divider {
+      height: 1px;
+      width: 100%;
+      background-color: #eee; }
+  .right-navlist .comment-block__link {
+    white-space: nowrap; }
+    .right-navlist .comment-block__link::before {
+      content: "\f4ad"; }
+  .right-navlist .comment-block #drop-comment {
+    position: absolute;
+    right: 60px;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .right-navlist .comment-block #drop-comment .divider {
+      height: 1px;
+      width: 100%;
+      background-color: #eee; }
+    .right-navlist .comment-block #drop-comment .list-item .link-inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 18px 25px; }
+      .right-navlist .comment-block #drop-comment .list-item .link-inner:hover .link-inner__text-box * {
+        color: blue; }
+      .right-navlist .comment-block #drop-comment .list-item .link-inner:hover .link-inner__icon-box i::after {
+        opacity: 0.8; }
+      .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box {
+        margin-right: 10px; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box i {
+          position: relative;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin: 0px 10px; }
+          .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box i::before {
+            font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: #fff; }
+          .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box i::after {
+            position: absolute;
+            display: inline-block;
+            content: "";
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            border-radius: 50%;
+            z-index: -1; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-1::before {
+          content: "\f274"; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-1::after {
+          background-color: #29B779; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-2::before {
+          content: "\f013"; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-2::after {
+          background-color: #2356A4; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-3::before {
+          content: "\f007"; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-3::after {
+          background-color: #7461EE; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-4::before {
+          content: "\f0c1"; }
+        .right-navlist .comment-block #drop-comment .list-item .link-inner__icon-box .icon-4::after {
+          background-color: #DA552F; }
+      .right-navlist .comment-block #drop-comment .list-item .link-inner__text-box h5 {
+        font-size: 1.1rem;
+        color: #3e5569;
+        line-height: 1.5; }
+      .right-navlist .comment-block #drop-comment .list-item .link-inner__text-box p {
+        font-size: 0.9rem;
+        color: #A5A8AB;
+        line-height: 1.5; }
+  .right-navlist .account-block__link {
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    .right-navlist .account-block__link::before {
+      content: "\f2bd"; }
+    .right-navlist .account-block__link:hover::before {
+      color: #FF7E14 !important; }
+  .right-navlist .account-block #drop-account {
+    position: absolute;
+    right: 10px;
+    width: 250px;
+    z-index: 10;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .right-navlist .account-block #drop-account .divider {
+      height: 1px;
+      width: 100%;
+      background-color: #eee; }
+    .right-navlist .account-block #drop-account .list-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 18px 25px;
+      font-size: 0.9rem;
+      color: #3e5569;
+      white-space: nowrap; }
+      .right-navlist .account-block #drop-account .list-item:hover:not(:last-child) {
+        background-color: #EEEEEE; }
+      .right-navlist .account-block #drop-account .list-item i::before {
+        display: inline-block;
+        width: 24px;
+        margin-right: 10px;
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1rem;
+        color: #3e5569; }
+      .right-navlist .account-block #drop-account .list-item .icon-1::before {
+        content: "\f007"; }
+      .right-navlist .account-block #drop-account .list-item .icon-2::before {
+        content: "\f53d"; }
+      .right-navlist .account-block #drop-account .list-item .icon-3::before {
+        content: "\f0e0"; }
+      .right-navlist .account-block #drop-account .list-item .icon-4::before {
+        content: "\f013"; }
+      .right-navlist .account-block #drop-account .list-item .icon-5::before {
+        content: "\f011"; }
+    .right-navlist .account-block #drop-account .list-item__btn {
+      padding: 6px 8px;
+      border-radius: 60px;
+      background-color: #28B779;
+      font-size: 0.9rem;
+      color: #fff; }
+      .right-navlist .account-block #drop-account .list-item__btn:hover {
+        opacity: 0.8; }
+
+/*                             sidebar*/
+.sidebar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 250px; }
+
+.sidebar-list {
+  margin-top: 64px;
+  height: 100vh;
+  background-color: #1F262D; }
+  .sidebar-list:hover {
+    width: 250px; }
+    .sidebar-list:hover .list-item__text {
+      display: block !important; }
+
+.sidebar-list__item a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 15px;
+  color: #A5A8AB;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+  .sidebar-list__item a:hover {
+    background-color: #343A3F;
+    color: #fff; }
+  .sidebar-list__item a:hover i::before {
+    color: #fff; }
+  .sidebar-list__item a:hover span::after {
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .sidebar-list__item a i {
+    margin-right: 10px;
+    min-width: 22px; }
+    .sidebar-list__item a i::before {
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: #A5A8AB;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+  .sidebar-list__item a span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+    .sidebar-list__item a span::after {
+      float: right;
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-weight: 900;
+      font-size: 0.8rem;
+      color: #A5A8AB;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+
+.sidebar-list__item .dropdown-list a:hover i::before {
+  color: #fff; }
+
+.sidebar-list__item .dropdown-list a i::before {
+  padding-left: 10px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #A5A8AB;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.sidebar-list__item .sidebar-list__dashboard i::before {
+  content: "\f009"; }
+
+.sidebar-list__item .sidebar-list__charts i::before {
+  content: "\f080"; }
+
+.sidebar-list__item .sidebar-list__widgets i::before {
+  content: "\f459"; }
+
+.sidebar-list__item .sidebar-list__tables i::before {
+  content: "\f0ce"; }
+
+.sidebar-list__item .sidebar-list__full-width i::before {
+  content: "\f0b2"; }
+
+.sidebar-list__item .sidebar-list__forms i::before {
+  content: "\f022"; }
+
+.sidebar-list__item .sidebar-list__forms span::after {
+  content: "\f054"; }
+
+.sidebar-list__item .dropdown-list__form-basic i::before {
+  content: "\f15c"; }
+
+.sidebar-list__item .dropdown-list__form-wizard i::before {
+  content: "\f477"; }
+
+.sidebar-list__item .sidebar-list__buttons i::before {
+  content: "\f16e"; }
+
+.sidebar-list__item .sidebar-list__elements i::before {
+  content: "\f14b"; }
+
+.sidebar-list__item .sidebar-list__addons i::before {
+  content: "\f468"; }
+
+.sidebar-list__item .sidebar-list__addons span::after {
+  content: "\f054"; }
+
+.sidebar-list__item .dropdown-list__addons-gallery i::before {
+  content: "\f03e"; }
+
+.sidebar-list__item .dropdown-list__addons-invoice i::before {
+  content: "\f570"; }
+
+.sidebar-list__item .dropdown-list__addons-chat-option i::before {
+  content: "\f27a"; }
+
+.sidebar-list__item .sidebar-list__authentication i::before {
+  content: "\f2bb"; }
+
+.sidebar-list__item .sidebar-list__authentication span::after {
+  content: "\f054"; }
+
+.sidebar-list__item .dropdown-list__authentication-login i::before {
+  content: "\f2f5"; }
+
+.sidebar-list__item .dropdown-list__authentication-register i::before {
+  content: "\f534"; }
+
+@media screen and (max-width: 900px) {
+  .header {
+    display: block; }
+  .navbar-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100% !important;
+    background-color: #1F262D; }
+    .navbar-container .logo-block__link {
+      background-color: transparent; }
+      .navbar-container .logo-block__link p {
+        display: block !important; }
+    .navbar-container .bars-block,
+    .navbar-container .ellipse-block {
+      display: block; }
+  .collapse-container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: none;
+    border-top: 1px solid #fff; }
+    .collapse-container .left-navlist .bars-block {
+      display: none; }
+    .collapse-container .left-navlist .create-block__link span {
+      display: none; }
+    .collapse-container .left-navlist .create-block__link::after {
+      margin-left: 0;
+      content: "\f067";
+      font-size: 1rem; } }

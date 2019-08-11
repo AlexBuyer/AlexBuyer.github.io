@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/libs.min.css"><!--все библиотеки и плагины подключены в этом файле-->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="navbar-container header__navbar">
+			<div class="bars-block navbar-container__bars">
+				<a class="bars-block__link" id="bars-navbar" href="javascript:void(0)"></a>
+			</div>
+			<div class="logo-block navbar-container__logo">
+				<a class="logo-block__link" href="#">
+					<img src="img/logo-icon.png" alt="logo">
+					<p id="logo-text">
+						<span>BKDVL</span>
+						<span>Admin</span>
+					</p>
+				</a>	
+			</div>
+			<div class="ellipse-block navbar-container__ellipse">
+				<a class="ellipse-block__link" href="javascript:void(0)"></a>
+			</div>	
+		</div>
+
+		<div class="collapse-container header__collapse">
+			<ul class="left-navlist collapse-container__left-navlist">
+				<li class="bars-block left-navlist__bars">
+					<a class="bars-block__link" id="bars-collapse" href="javascript:void(0)"></a>
+				</li>
+				<li class="create-block left-navlist__create">
+					<a class="create-block__link" href="javascript:void(0)"><span>Create New</span></a>
+					<div class="dropdown-list" id="drop-create" style="display: none">
+						<a href="#">Action</a>
+						<a href="#">Another action</a>
+						<div class="divider"></div>
+						<a href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="search-block left-navlist__search">
+					<a class="search-block__link" href="javascript:void(0)"></a>
+					<form class="search-form" style="display: none" action="">
+						<input class="search-form__input" type="text" placeholder="Search & enter">
+						<a class="search-form__close" style="display: none" href="javascript:void(0)"></a>
+					</form>
+				</li>		
+			</ul>		
+
+			<ul class="right-navlist collapse-container__right-navlist">
+				<li class="alert-block right-navlist__alert">
+					<a class="alert-block__link" href="javascript:void(0)"></a>
+					<div class="dropdown-list" id="drop-alert" style="display: none">
+						<a href="#">Action</a>
+						<a href="#">Another action</a>
+						<div class="divider"></div>
+						<a href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="comment-block right-navlist__comment">
+					<a class="comment-block__link" href="javascript:void(0)"></a>
+					<div class="dropdown-list" id="drop-comment" style="display: none">
+						<div class="list-item">
+							<a class="link-inner" href="#">
+								<div class="link-inner__icon-box">
+									<i class="icon-1"></i>
+								</div>
+								<div class="link-inner__text-box">
+									<h5>Event today</h5>
+									<p>Just a reminder that event</p>
+								</div>
+							</a>
+						</div>
+						<div class="divider"></div>
+						<div class="list-item">
+							<a class="link-inner" href="#">
+								<div class="link-inner__icon-box">
+									<i class="icon-2"></i>
+								</div>
+								<div class="link-inner__text-box">
+									<h5>Settings</h5>
+									<p>You can customize this template</p>
+								</div>
+							</a>
+						</div>
+						<div class="divider"></div>
+						<div class="list-item">
+							<a class="link-inner" href="#">
+								<div class="link-inner__icon-box">
+									<i class="icon-3"></i>
+								</div>
+								<div class="link-inner__text-box">
+									<h5>Pavan Kumar</h5>
+									<p>Just see the my admin</p>
+								</div>
+							</a>
+						</div>
+						<div class="divider"></div>
+						<div class="list-item">
+							<a class="link-inner" href="#">
+								<div class="link-inner__icon-box">
+									<i class="icon-4"></i>
+								</div>
+								<div class="link-inner__text-box">
+									<h5>Luanch Admin</h5>
+									<p>Just see the my new admin</p>
+								</div>
+							</a>
+						</div>															
+					</div>
+				</li>
+				<li class="account-block right-navlist__account">
+					<a class="account-block__link" href="#"></a>
+					<div class="dropdown-list" id="drop-account" style="display: none;" >
+						<a class="list-item" href="#">
+							<i class="icon-1"></i>
+							My Profile
+						</a>
+						<a class="list-item" href="#">
+							<i class="icon-2"></i>
+							My Balance
+						</a>
+						<a class="list-item" href="#">
+							<i class="icon-3"></i>
+							Inbox
+						</a>
+						<div class="divider"></div>
+						<a class="list-item" href="#">
+							<i class="icon-4"></i>
+							Account Settings
+						</a>
+						<a class="list-item" href="#">
+							<i class="icon-5"></i>
+							Logout
+						</a>
+						<div class="divider"></div>
+						<div class="list-item">
+							<a href="#" class="list-item__btn">View Profile</a>
+						</div>																												
+					</div>
+				</li>
+			</ul>							
+		</div>
+	</header>
+
+	<aside class="sidebar">
+		<nav class="sidebar-nav">
+			<ul class="sidebar-list">
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__dashboard" href="https://ya.ru/">
+						<i></i>	
+						<span class="list-item__text">Dashboard</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__charts" href="">
+						<i></i>					
+						<span class="list-item__text">Charts</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__widgets" href="">
+						<i></i>	
+						<span class="list-item__text">Widgets</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__tables" href="">
+						<i></i>	
+						<span class="list-item__text">Tables</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__full-width" href="">
+						<i></i>	
+						<span class="list-item__text">Full Width</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__forms" href="javascript:void(0)">
+						<i></i>	
+						<span class="list-item__text">Forms</span>
+					</a>
+					<div class= "dropdown-list" id="drop-form" style="display: none">
+						<a class="dropdown-list__form-basic" href=""><i></i><span>Form Basic</span></a>
+						<a class="dropdown-list__form-wizard" href=""><i></i><span>Form Wizard</span></a>
+					</div>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__buttons" href="">
+						<i></i>	
+						<span class="list-item__text">Buttons</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__elements" href="">
+						<i></i>	
+						<span class="list-item__text">Elements</span>
+					</a>
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__addons" href="javascript:void(0)">
+						<i></i>	
+						<span class="list-item__text">Addons</span>
+					</a>
+					<div class= "dropdown-list" id="drop-addons" style="display: none">
+						<a class="dropdown-list__addons-gallery" href=""><i></i><span>Gallery</span></a>
+						<a class="dropdown-list__addons-invoice" href=""><i></i><span>Invoice</span></a>
+						<a class="dropdown-list__addons-chat-option" href=""><i></i><span>Chat Option</span></a>
+					</div>					
+				</li>
+				<li class="sidebar-list__item">
+					<a class="sidebar-list__authentication" href="javascript:void(0)">
+						<i></i>	
+						<span class="list-item__text">Authentication</span>
+					</a>
+					<div class= "dropdown-list" id="drop-authentication" style="display: none">
+						<a class="dropdown-list__authentication-login" href=""><i></i><span>Login</span></a>
+						<a class="dropdown-list__authentication-register" href=""><i></i><span>Register</span></a>
+					</div>					
+				</li>
+			</ul>
+		</nav>
+	</aside>			
+
+
+
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+</body>
+</html>
