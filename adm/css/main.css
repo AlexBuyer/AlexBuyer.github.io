@@ -576,143 +576,120 @@ body {
     width: 250px; }
     .sidebar-list:hover .list-item__text {
       display: block !important; }
-
-.sidebar-list__item a {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 14px 15px;
-  color: #A5A8AB;
-  font-size: 0.9rem;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-  .sidebar-list__item a:hover {
-    background-color: #343A3F;
-    color: #fff; }
-  .sidebar-list__item a:hover i::before {
-    color: #fff; }
-  .sidebar-list__item a:hover span::after {
-    color: #fff;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  .sidebar-list__item a i {
-    margin-right: 10px;
-    min-width: 22px; }
-    .sidebar-list__item a i::before {
-      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-      font-style: normal;
-      font-weight: 900;
-      font-size: 1.2rem;
-      color: #A5A8AB;
-      -webkit-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
-  .sidebar-list__item a span {
+  .sidebar-list .sidebar-list__item a {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
-    .sidebar-list__item a span::after {
-      float: right;
-      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-      font-weight: 900;
-      font-size: 0.8rem;
-      color: #A5A8AB;
-      -webkit-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
-
-.sidebar-list__item .dropdown-list a:hover i::before {
-  color: #fff; }
-
-.sidebar-list__item .dropdown-list a i::before {
-  padding-left: 10px;
-  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 1rem;
-  color: #A5A8AB;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-
-.sidebar-list__item .sidebar-list__dashboard i::before {
-  content: "\f009"; }
-
-.sidebar-list__item .sidebar-list__charts i::before {
-  content: "\f080"; }
-
-.sidebar-list__item .sidebar-list__widgets i::before {
-  content: "\f459"; }
-
-.sidebar-list__item .sidebar-list__tables i::before {
-  content: "\f0ce"; }
-
-.sidebar-list__item .sidebar-list__full-width i::before {
-  content: "\f0b2"; }
-
-.sidebar-list__item .sidebar-list__forms i::before {
-  content: "\f022"; }
-
-.sidebar-list__item .sidebar-list__forms span::after {
-  content: "\f054"; }
-
-.sidebar-list__item .dropdown-list__form-basic i::before {
-  content: "\f15c"; }
-
-.sidebar-list__item .dropdown-list__form-wizard i::before {
-  content: "\f477"; }
-
-.sidebar-list__item .sidebar-list__buttons i::before {
-  content: "\f16e"; }
-
-.sidebar-list__item .sidebar-list__elements i::before {
-  content: "\f14b"; }
-
-.sidebar-list__item .sidebar-list__addons i::before {
-  content: "\f468"; }
-
-.sidebar-list__item .sidebar-list__addons span::after {
-  content: "\f054"; }
-
-.sidebar-list__item .dropdown-list__addons-gallery i::before {
-  content: "\f03e"; }
-
-.sidebar-list__item .dropdown-list__addons-invoice i::before {
-  content: "\f570"; }
-
-.sidebar-list__item .dropdown-list__addons-chat-option i::before {
-  content: "\f27a"; }
-
-.sidebar-list__item .sidebar-list__authentication i::before {
-  content: "\f2bb"; }
-
-.sidebar-list__item .sidebar-list__authentication span::after {
-  content: "\f054"; }
-
-.sidebar-list__item .dropdown-list__authentication-login i::before {
-  content: "\f2f5"; }
-
-.sidebar-list__item .dropdown-list__authentication-register i::before {
-  content: "\f534"; }
+    padding: 14px 15px;
+    color: #A5A8AB;
+    font-size: 0.9rem;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    .sidebar-list .sidebar-list__item a:hover {
+      background-color: #343A3F;
+      color: #fff; }
+    .sidebar-list .sidebar-list__item a:hover i::before {
+      color: #fff; }
+    .sidebar-list .sidebar-list__item a:hover span::after {
+      color: #fff;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .sidebar-list .sidebar-list__item a i {
+      margin-right: 10px;
+      min-width: 22px; }
+      .sidebar-list .sidebar-list__item a i::before {
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: #A5A8AB;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out; }
+    .sidebar-list .sidebar-list__item a span {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%; }
+      .sidebar-list .sidebar-list__item a span::after {
+        float: right;
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-weight: 900;
+        font-size: 0.8rem;
+        color: #A5A8AB;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out; }
+  .sidebar-list .sidebar-list__item .dropdown-list a:hover i::before {
+    color: #fff; }
+  .sidebar-list .sidebar-list__item .dropdown-list a i::before {
+    padding-left: 10px;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #A5A8AB;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .sidebar-list .sidebar-list__item .sidebar-list__dashboard i::before {
+    content: "\f009"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__charts i::before {
+    content: "\f080"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__widgets i::before {
+    content: "\f459"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__tables i::before {
+    content: "\f0ce"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__full-width i::before {
+    content: "\f0b2"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__forms i::before {
+    content: "\f022"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__forms span::after {
+    content: "\f054"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__form-basic i::before {
+    content: "\f15c"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__form-wizard i::before {
+    content: "\f477"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__buttons i::before {
+    content: "\f16e"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__elements i::before {
+    content: "\f14b"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__addons i::before {
+    content: "\f468"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__addons span::after {
+    content: "\f054"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__addons-gallery i::before {
+    content: "\f03e"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__addons-invoice i::before {
+    content: "\f570"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__addons-chat-option i::before {
+    content: "\f27a"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__authentication i::before {
+    content: "\f2bb"; }
+  .sidebar-list .sidebar-list__item .sidebar-list__authentication span::after {
+    content: "\f054"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__authentication-login i::before {
+    content: "\f2f5"; }
+  .sidebar-list .sidebar-list__item .dropdown-list__authentication-register i::before {
+    content: "\f534"; }
 
 @media screen and (max-width: 900px) {
   .header {
